@@ -1,0 +1,224 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  z-index: 100;
+}
+.left-section {
+  align-items: center;
+  display: flex;
+}
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.upload, .apps, .notif {
+  height: 24px;
+}
+#user {
+ height: 32px; 
+ border-radius: 50%;
+ cursor: pointer;
+}
+.hamburger {
+  height: 24px;
+  margin: 0 24px;
+}
+.youtube-logo {
+  height: 20px;
+}
+.search-btn {
+  height: 38px;
+  width: 66px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid rgb(204, 204, 204);
+  border-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+  position: relative; 
+}
+.search-btn .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -25px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.search-btn:hover .tooltip {
+  opacity: 1;
+}
+.search-icon {
+  height: 25px;
+  flex:1;
+}
+.voice-btn {
+  height: 38px;
+  width: 40px;
+  margin-left: 8px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+}
+.voice-btn .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -25px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  /* width: 130px; */
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.voice-btn:hover .tooltip {
+  opacity: 1;
+}
+.voice-icon {
+  height: 24px;
+  flex: 1;
+}
+.search-bar::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  border: 1px solid rgb(204, 204, 204);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-size: 16px;
+  box-shadow: inset 0px 1px 2px rgba(0,0,0,0.05);
+  padding: 0 10px;
+  width: 0;
+}
+.notif-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction: column;
+}
+.notif-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.notif-container:hover .tooltip {
+  opacity: 1;
+}
+.notif-count {
+  position: absolute;
+  background-color: rgb(190, 0, 0);
+  font-size: 10px;
+  display: flex;
+  width: 4px;
+  height: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  top:0;
+  right:0;
+  font-weight: 500;
+  color: white;
+  border: none;
+  font-family: roboto, arial;
+}
+.upload-container {
+  cursor: pointer;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upload-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.upload-container:hover .tooltip {
+  opacity: 1;
+}
+.apps-container {
+  cursor: pointer;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apps-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  /* width: 80px; */
+  white-space: nowrap;
+}
+.apps-container:hover .tooltip {
+  opacity: 1;
+}
+
